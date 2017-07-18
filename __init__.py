@@ -63,5 +63,6 @@ class FunctionActor(ActorBase):
             self.out_trig = False            
             self.off_time = datetime.utcnow() + timedelta(seconds=int(self.off_delay))
         
-
+    def set_power(self, power=0):
+        self.power = power
 
