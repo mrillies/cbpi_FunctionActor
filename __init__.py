@@ -164,7 +164,7 @@ class FunctionActor(ActorBase):
             else:
                 self.api.switch_actor_off(int(self.output_actor))
                 self.display_power(0)
-        if self.out_on == False:
+        if self.out_on == False and cbpi.cache.get("actors").get(int(self.id)).power != 0:
             self.display_power(0)
 
 
