@@ -3,8 +3,10 @@ A CraftBeerPi Actor that adds functions to any basic actor.
 Please contact me here or at mrillies87@gmail.com if you need help writing rules
 
 ## Base Paramters
-### Slave Actor: Actor to be controlled. 
-- Once an actor has been asigned as a slave it should be hidden and not allocated directly to a kettle/feremntor/other actor
+### Slave Actor: 
+- Actor to be controlled. 
+    - Once an actor has been asigned as a slave it should be hidden and not allocated directly to a kettle/feremntor/other actor
+    - Status of slave actor output can be seen in the power percentage value of the fucntion actor
 
 ### Time Parameters
 - On Delay: How many seconds to wait before turning on
